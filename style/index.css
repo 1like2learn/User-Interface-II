@@ -27,35 +27,75 @@ time, mark, audio, video {
 }
 *{
     box-sizing: border-box;
+    border: 2px solid black;
 }
 /* General */
 body{
-    line-height: 1.5;
-
+    line-height: 1;
 }
 h1{
-    font-size: 25px;
-    margin: 25px;
+    font-size: 40px;
 
+}
+h2{
+    font-size: 1.5em;
+}
+a{
+    text-decoration: none;
 }
 /* Header */
 header{
     background-color: darkcyan;
     color: cyan;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+header h1{
+    padding-left: 3%; 
 }
 header nav{
     display: flex;
+    padding-left: 5%;
+    width: 100%;
 }
 header a{
     background-color: white;
     color: black;
-    border: 2px;
+    border: 2px black solid;
     justify-content: center;
-    width: 40px;
-    height: 15px;
-
+    padding: .5% 1%;
+}
+header a.currentPage{
+    background-color:black;
+    color: white;
 }
 /* Section 1 */
+.section1{
+    margin: 1%;
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.section1 img{
+    width: 48%;
+}
+.section1 a{
+    color: black;
+    border: 2px solid black;
+    width: 40%;
+    text-align: center;
+    padding: 2% 0;
+    margin: 5% 0;
+}
+.section1 div{
+    width: 300px;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+}
 
 /* Section 2 */
 
