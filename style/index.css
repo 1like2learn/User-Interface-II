@@ -32,6 +32,7 @@ time, mark, audio, video {
 /* General */
 body{
     line-height: 1;
+    background-color: palegreen;
 }
 h1{
     font-size: 40px;
@@ -112,19 +113,22 @@ section.gallery{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 2px solid black;
 }
 section.gallery div{
     display: flex;
     flex-direction: column;
-    width: 22%;
-    height: 22%;
     align-items: center;
     margin-bottom: 5%;
+    width: 22%;
+    height: 22%;
 
 }
 section.gallery img{
    object-fit: cover;
+   
+}
+img.weird{
+    height:22%;
 }
 /* Footer */
 footer{
