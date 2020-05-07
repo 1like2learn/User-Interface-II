@@ -27,6 +27,7 @@ time, mark, audio, video {
 }
 *{
     box-sizing: border-box;
+    max-width: 100%;
 }
 /* General */
 body{
@@ -131,24 +132,29 @@ section.gallery img{
 footer{
     display: flex;
     flex-direction: column;
+    flex-direction: space-evenly;
     align-items: center;
     background-color: darkcyan;
     height: 20vh;
     color: white;
 }
-footer div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+footer h2{
+    margin-top: 5%;
 }
-footer div a{
+footer nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%
+}
+footer nav a{
     border: 2px solid black;
     text-decoration: none;
     background-color: white;
     color: black;
-    margin: 10% 10%;
-    text-align: center;
-    padding: 5% 10%;
+    margin: 2% 0;
+    padding: 1% 2%; 
+    height: 40%;
     
 }
