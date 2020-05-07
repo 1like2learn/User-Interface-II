@@ -31,6 +31,9 @@ time, mark, audio, video {
     max-width: 100%;
 }
 /* General */
+.screen-reader-skip{
+    display:none
+}
 body{
     line-height: 1;
     background-color: aquamarine;
@@ -184,13 +187,16 @@ footer nav a{
         flex-direction: column;
         align-content: center;
     }
+    .section1 h2{
+        text-align: center;
+    }
     .section1 a{
         margin: 5% auto;
     }
     .section1 img, .section1 div{
         width: 82%;
     }
-    /* .gallery div{
+    .gallery div{
         min-width:100%
-    } */
+    }
 }
