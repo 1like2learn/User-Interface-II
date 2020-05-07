@@ -1,1 +1,176 @@
 /* Add CSS styling here */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    border: 2px solid grey;
+}
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+/* General */
+body{
+    line-height: 1;
+    background-color: palegreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+h1{
+    font-size: 40px;
+
+}
+h2{
+    font-size: 1.5em;
+}
+a{
+    text-decoration: none;
+}
+section{
+    margin:1%;
+}
+/* Header */
+header{
+    background-color: darkcyan;
+    color: cyan;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+header h1{
+    padding-left: 3%; 
+}
+header nav{
+    display: flex;
+    padding-left: 5%;
+    width: 100%;
+}
+header a{
+    background-color: white;
+    color: black;
+    border: 2px black solid;
+    justify-content: center;
+    padding: .5% 1%;
+}
+header a.currentPage{
+    background-color:black;
+    color: white;
+}
+/* Section 1 */
+.section1{
+    width: 98%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section1 p{
+    font-size: 20px;
+}
+.section1 img{
+    width: 48%;
+    
+}
+.section1 a{
+    color: black;
+    border: 2px solid black;
+    background-color: white;
+    width: 40%;
+    text-align: center;
+    padding: 2% 0;
+    margin: 5% 0;
+    font-size: 18px;
+}
+.section1 div{
+    width: 40%;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5%
+}
+
+
+/* Section Gallery */
+
+section.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+section.gallery div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    width: 22%;
+    min-height: 22%;
+    min-width: 22%;
+
+}
+section.gallery img{
+   object-fit: cover;
+   min-height: 100%;
+   min-width: 100%;
+}
+/* img.weird{
+    height:22%;
+} */
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-direction: space-evenly;
+    align-items: center;
+    background-color: darkcyan;
+    color: white;
+}
+footer h2{
+    margin-top: 2%;
+}
+footer nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%
+}
+footer nav a{
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    margin: 2% 0;
+    padding: 1% 2%; 
+    height: 40%;
+    
+}
