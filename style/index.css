@@ -33,7 +33,7 @@ time, mark, audio, video {
 /* General */
 body{
     line-height: 1;
-    background-color: palegreen;
+    background-color: aquamarine;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,17 +56,16 @@ section{
 header{
     background-color: darkcyan;
     color: cyan;
-    height: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 header h1{
-    padding-left: 3%; 
+    padding: 1% 3%; 
 }
 header nav{
     display: flex;
-    padding-left: 5%;
+    padding: 0 0 1% 5%;
     width: 100%;
 }
 header a{
@@ -131,18 +130,13 @@ section.gallery div{
     align-items: center;
     margin-bottom: 5%;
     width: 22%;
-    min-height: 22%;
-    min-width: 22%;
 
 }
-section.gallery img{
+section.gallery div img{
    object-fit: cover;
-   min-height: 100%;
-   min-width: 100%;
+   height: 100%;
+   width: 100%;
 }
-/* img.weird{
-    height:22%;
-} */
 /* Footer */
 footer{
     display: flex;
@@ -171,4 +165,32 @@ footer nav a{
     padding: 1% 2%; 
     height: 40%;
     
+}
+
+/* Media Queries */
+
+@media (max-width: 800px){
+
+    .gallery{
+        padding: 0 10%;
+    }
+    .gallery div{
+        min-width: 44%;
+    }
+}
+
+@media (max-width:500px){
+    .section1{
+        flex-direction: column;
+        align-content: center;
+    }
+    .section1 a{
+        margin: 5% auto;
+    }
+    .section1 img, .section1 div{
+        width: 82%;
+    }
+    /* .gallery div{
+        min-width:100%
+    } */
 }
