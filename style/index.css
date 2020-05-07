@@ -21,7 +21,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
     vertical-align: baseline;
     border: 2px solid grey;
@@ -40,11 +40,11 @@ body{
     align-content: center;
 }
 h1{
-    font-size: 40px;
+    font-size: 3rem;
 
 }
 h2{
-    font-size: 1.5em;
+    font-size: 2rem;
 }
 a{
     text-decoration: none;
@@ -91,9 +91,8 @@ header a.currentPage{
     margin-bottom: 4%;
     margin-left: auto;
     margin-right: auto;
-}
-.section1 p{
-    font-size: 20px;
+    
+    font-size: 1.3rem;
 }
 .section1 img{
     width: 48%;
@@ -107,7 +106,6 @@ header a.currentPage{
     text-align: center;
     padding: 2% 0;
     margin: 5% 0;
-    font-size: 18px;
 }
 .section1 div{
     width: 40%;
