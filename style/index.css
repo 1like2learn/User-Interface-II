@@ -24,6 +24,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
+    border: 2px solid grey;
 }
 *{
     box-sizing: border-box;
@@ -33,6 +34,10 @@ time, mark, audio, video {
 body{
     line-height: 1;
     background-color: palegreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 h1{
     font-size: 40px;
@@ -78,10 +83,14 @@ header a.currentPage{
 /* Section 1 */
 .section1{
     width: 98%;
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     margin-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .section1 p{
     font-size: 20px;
@@ -93,6 +102,7 @@ header a.currentPage{
 .section1 a{
     color: black;
     border: 2px solid black;
+    background-color: white;
     width: 40%;
     text-align: center;
     padding: 2% 0;
@@ -104,6 +114,7 @@ header a.currentPage{
     flex-direction: column;
     display: flex;
     justify-content: flex-end;
+    margin-top: 5%
 }
 
 
@@ -113,19 +124,23 @@ section.gallery{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 section.gallery div{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 5%;
-    width: 21.5vh;
-    height: 21.5vh;
+    width: 22%;
+    min-height: 22%;
+    min-width: 22%;
 
 }
 section.gallery img{
    object-fit: cover;
-   
+   min-height: 100%;
+   min-width: 100%;
 }
 /* img.weird{
     height:22%;
@@ -137,11 +152,10 @@ footer{
     flex-direction: space-evenly;
     align-items: center;
     background-color: darkcyan;
-    height: 20vh;
     color: white;
 }
 footer h2{
-    margin-top: 5%;
+    margin-top: 2%;
 }
 footer nav{
     display: flex;
