@@ -24,19 +24,21 @@ time, mark, audio, video {
 	font-size: 62.5%;
 	font: inherit;
     vertical-align: baseline;
-    border: 2px solid grey;
+    /* border: 2px solid grey; */
 }
 *{
     box-sizing: border-box;
     max-width: 100%;
 }
+
 /* General */
+
 .screen-reader-skip{
     display:none
 }
 body{
     line-height: 1;
-    background-color: aquamarine;
+    background-color: lightskyblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,9 +57,11 @@ a{
 section{
     margin:1%;
 }
+
 /* Header */
+
 header{
-    background-color: darkcyan;
+    background-color: steelblue;
     color: cyan;
     display: flex;
     flex-direction: column;
@@ -82,7 +86,9 @@ header a.currentPage{
     background-color:black;
     color: white;
 }
+
 /* Section 1 */
+
 .section1{
     width: 98%;
     max-width: 1000px;
@@ -146,7 +152,7 @@ footer{
     flex-direction: column;
     flex-direction: space-evenly;
     align-items: center;
-    background-color: darkcyan;
+    background-color: steelblue;
     color: white;
 }
 footer h2{
@@ -183,6 +189,13 @@ footer nav a{
 }
 
 @media (max-width:500px){
+    header{
+        align-items: center;
+    }
+    header nav{
+        justify-content: center;
+        padding-bottom: 1%;
+    }
     .section1{
         flex-direction: column;
         align-content: center;
